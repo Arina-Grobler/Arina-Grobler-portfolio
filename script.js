@@ -1,5 +1,9 @@
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Thank you for your message!");
-    this.reset();  // Clear the form after submission
-});
+const hamMenu = document.querySelector('.hamburger');
+
+const offScreenMenu = document.querySelector('.off-screen-menu');
+
+hamMenu.addEventListener('click', () => {
+    hamMenu.classList.toggle('active');
+    offScreenMenu.classList.toggle('active');
+})
+  
