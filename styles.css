@@ -19,6 +19,15 @@
     background-color: #f1f1f1;
   }
 
+  .textColumn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 20rem;
+    background-color: #f1f1f1;
+  }
+
   .containertwo{
     display: block;
     align-items: center;
@@ -157,17 +166,17 @@
 }
 
 .fa-behance{
-  background: #195a29d9;
-  color: #43a45c;
+  background: rgb(0, 0, 0);
+  color: white;
 }
 
 .fa-instagram{
-  background: #721351d9;
-  color: #ef0ea0;
+  background: rgb(0, 0, 0);
+  color: white;
 }
 
 .fa-linkedin{
-  background: #022e60d9;
-  color: #0072f5;
+  background: rgb(0, 0, 0);
+  color: white;
 }
   
