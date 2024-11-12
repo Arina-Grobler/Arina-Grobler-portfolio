@@ -23,8 +23,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
-    gap: 20rem;
+    padding: 20px;
+    gap: 50px;
     background-color: #f1f1f1;
   }
 
@@ -178,5 +178,23 @@
 .fa-linkedin{
   background: rgb(0, 0, 0);
   color: white;
+}
+
+.gallery{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-item{
+  text-align: center;
+  width: 200px;
+}
+
+.gallery-item img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
   
