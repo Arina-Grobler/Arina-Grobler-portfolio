@@ -82,7 +82,7 @@
   }
   
   nav ul li a:hover {
-    color: #d50eef;
+    color: #e16bcf;
     border-radius: 4px;
   }
 
@@ -112,7 +112,15 @@
     
   }
 
-.button {
+.imgbutton{
+  border: none;
+  color: white; /* Set text color */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer;
+  animation: forwards;
+}
+
+  .button {
   border-radius: 4px;
   background-color: #000000;
   border: none;
@@ -188,7 +196,7 @@
 }
 
 .gallery-item{
-  text-align: center;
+  text-align: left;
   width: 200px;
 }
 
