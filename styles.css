@@ -9,10 +9,52 @@
     font-family: Arial, sans-serif;
     line-height: 1.6;
   }
+
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: #f1f1f1;
+  }
+
+  .containertwo{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: #f1f1f1;
+  }
+  
+  .profile-section{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .profile-image{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 1rem;
+  }
+
+  .profile-imagetwo{
+    width: 250px;
+    height: 250px;
+    border-radius: 15%;
+    object-fit: cover;
+    padding: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   /* Navigation Styles */
   nav {
-    background-color: #ffffff;
+    background-color: #f1f1f1;
     padding: 1em;
   }
   
@@ -41,4 +83,91 @@
     margin-right: auto;
     width: 25%;
   }
+
+  .left {
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+    width: 25%;
+    float: left;
+    text-indent: justify;
+  }
+
+  .text-justify{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    flex: 2;
+    width: 50%;
+    text-align: center;
+    
+  }
+
+.button {
+  border-radius: 4px;
+  background-color: #000000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 0.5rem 0.8rem;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-behance{
+  background: #195a29d9;
+  color: #43a45c;
+}
+
+.fa-instagram{
+  background: #721351d9;
+  color: #ef0ea0;
+}
+
+.fa-linkedin{
+  background: #022e60d9;
+  color: #0072f5;
+}
   
