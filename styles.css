@@ -8,6 +8,10 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-image: url('images/background.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
   }
 
   .container{
@@ -28,14 +32,17 @@
     background-color: #f1f1f1;
   }
 
-  .containertwo{
+  .containertwo {
+    margin-left: 5%;
+    text-align: left;
     display: block;
     align-items: center;
     justify-content: center;
     padding: 2rem;
     gap: 2rem;
     background-color: #f1f1f1;
-  }
+    max-width: 50%; /* Limit width to half of the page */
+}
   
   .profile-section{
     flex: 1;
@@ -51,8 +58,8 @@
   }
 
   .profile-imagetwo{
-    width: 250px;
-    height: 250px;
+    width: 30%;
+    height: 30%;
     border-radius: 15%;
     object-fit: cover;
     padding: 1rem;
@@ -65,6 +72,14 @@
   nav {
     background-color: #f1f1f1;
     padding: 1em;
+  }
+
+  .current{
+    color:#e16bcf
+  }
+
+  .nav.active{
+    color: #e16bcf;
   }
   
   nav ul {
@@ -85,6 +100,7 @@
     color: #e16bcf;
     border-radius: 4px;
   }
+
 
   .center {
     display: block;
@@ -118,13 +134,18 @@
   font-size: 16px; /* Adjust font size */
   cursor: pointer;
   animation: forwards;
+  transition: opacity 0.3s ease;
 }
 
-  .button {
+.imgbutton:hover{
+  opacity: 0.7;
+}
+
+.button {
   border-radius: 4px;
-  background-color: #000000;
+  background-color: #ffffff;
   border: none;
-  color: #FFFFFF;
+  color: #000000;
   text-align: center;
   font-size: 28px;
   padding: 0.5rem 0.8rem;
@@ -155,6 +176,47 @@
 }
 
 .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button1 {
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 28px;
+  padding: 0.5rem 0.8rem;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: auto;
+  display: block;
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
   opacity: 1;
   right: 0;
 }
@@ -190,7 +252,7 @@
 
 .gallery{
   display: flex;
-  gap: 20px;
+  gap: 150px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -201,7 +263,7 @@
 }
 
 .gallery-item img{
-  width: 100%;
+  width: 150%;
   height: auto;
   border-radius: 10px;
 }

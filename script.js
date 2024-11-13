@@ -1,9 +1,12 @@
-const hamMenu = document.querySelector('.hamburger');
+const navLinks = document.querySelectorAll('nav');
 
-const offScreenMenu = document.querySelector('.off-screen-menu');
-
-hamMenu.addEventListener('click', () => {
-    hamMenu.classList.toggle('active');
-    offScreenMenu.classList.toggle('active');
-})
-  
+// Loop through each link and add a click event listener
+navLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    // Remove 'active' class from all links
+    navLinks.forEach(link => link.classList.remove('active'));
+    
+    // Add 'active' class to the clicked link
+    this.classList.add('active');
+  });
+});
