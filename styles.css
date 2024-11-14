@@ -379,7 +379,7 @@ nav ul li a:hover {
   }
 
   .button{
-    width: 100%;
+    width: fit-content;
     font-size: 15px;
     padding: 0.5rem;
   }
