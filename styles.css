@@ -370,6 +370,7 @@ nav ul li a:hover {
     gap: 0.5em;
   }
 
+  .button,
   .button1,
   .button2 {
     width: 100%;
