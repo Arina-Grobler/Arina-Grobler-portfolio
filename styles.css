@@ -177,11 +177,33 @@ nav ul li a:hover {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-}
-
-.button {
   background-color: #000000;
   color: #ffffff;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span{
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .button1 {
@@ -264,10 +286,6 @@ nav ul li a:hover {
   right: 0;
 }
 
-.button:hover span{
-  padding-right: 25px;
-}
-
 .fa {
   padding: 5px;
   font-size: 5px;
@@ -306,12 +324,27 @@ nav ul li a:hover {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .container,
+  
   .container1,
   .textColumn,
-  .containertwo,
-  .container2 {
+  .containertwo {
     flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .container2{
+    flex-direction: row;
+    padding: 1rem;
+    gap: 1rem;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .container{
+    flex-direction: row;
     padding: 1rem;
     gap: 1rem;
     max-width: 100%;
@@ -337,7 +370,6 @@ nav ul li a:hover {
     gap: 0.5em;
   }
 
-  .button,
   .button1,
   .button2 {
     width: 100%;
